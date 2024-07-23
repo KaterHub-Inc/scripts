@@ -6,7 +6,7 @@
 
 Project Blackhole
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KaterHub-Inc/scripts/main/game/ProjectBlackhole.lua?token=GHSAT0AAAAAACU3AA6662XY36FMZTYFJF3MZVACZKQ"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KaterHub-Inc/scripts/main/game/ProjectBlackhole.lua"))()
 ```
 
 ```lua
