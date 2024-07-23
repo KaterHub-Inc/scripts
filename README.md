@@ -1,6 +1,6 @@
 <div align="left">
-  <h3>What is this?</h3>
-  <p class="discription">Scripts yeahyuh<br><br>Use our scripts at your own risk!</p>
+  <h3>Info</h3>
+  <p class="discription">Use our scripts at your own risk!</p>
 </div>
 <div align="center">
   <a href="https://discordapp.com/users/947868747576778822" target="_blank"><img src="https://img.shields.io/badge/Creator-Colin4President-blue"></img></a>
