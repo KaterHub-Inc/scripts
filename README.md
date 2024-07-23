@@ -16,6 +16,6 @@ loadstring(game:HttpGet(""))()
 </div>
 <div align="center">
   <h3>Premium</h3>
-  <p class="discription">if you are interested into buying premium commands for our script join our discord and Dm us!</p>
+  <p class="discription">if you are interested in buying our premium commands Dm us in our Discord!</p>
   <a href="https://discord.gg/kSBmA2qKEp" target="_blank"><img src="https://img.shields.io/discord/1185906126022266920?logo=discord&label=Join%20our%20Discord!&color=ba34eb">
 </div>
