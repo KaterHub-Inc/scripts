@@ -1533,6 +1533,7 @@ function lib:Window(text, preset)
             Label.Parent = Tab
             Label.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
             Label.Size = UDim2.new(0, 363, 0, 42)
+            Label.AnchorPoint = Vector2.new(0.5, 0.5)
             Label.AutoButtonColor = false
             Label.Font = Enum.Font.SourceSans
             Label.Text = ""
