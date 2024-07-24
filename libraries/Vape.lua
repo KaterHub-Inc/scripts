@@ -1563,7 +1563,7 @@ function lib:Window(text, preset)
 	            while wait(0.4) do
                     local fps = 1 / game:GetService("RunService").RenderStepped:wait()
                     local ping = math.ceil(player:GetNetworkPing()  * 1000)
-                    LabelTitle.Text = "Ping: " .. ping .. " / FPS: " .. fps
+                    LabelTitle.Text = "Ping: " .. ping .. " / FPS: " .. math.ceil(fps)
                 end
             end))
         end
