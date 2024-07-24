@@ -1529,7 +1529,7 @@ function lib:Window(text, preset)
             local LabelCorner = Instance.new("UICorner")
             local LabelTitle = Instance.new("TextLabel")
 
-            Label.Name = "Button"
+            Label.Name = "PingFPS Label"
             Label.Parent = Tab
             Label.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
             Label.Size = UDim2.new(0, 363, 0, 42)
@@ -1541,10 +1541,10 @@ function lib:Window(text, preset)
             Label.TextSize = 14.000
 
             LabelCorner.CornerRadius = UDim.new(0, 5)
-            LabelCorner.Name = "ButtonCorner"
+            LabelCorner.Name = "Corner"
             LabelCorner.Parent = Label
 
-            LabelTitle.Name = "ButtonTitle"
+            LabelTitle.Name = "status"
 
             LabelTitle.Parent = Label
             LabelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1556,6 +1556,7 @@ function lib:Window(text, preset)
             LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             LabelTitle.TextSize = 14.000
             LabelTitle.TextXAlignment = Enum.TextXAlignment.Center
+            LabelTitle.TextYAlignment = Enum.TextYAlignment.Center
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 
