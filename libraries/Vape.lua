@@ -1471,6 +1471,7 @@ function lib:Window(text, preset)
             Label.Text = ""
             Label.TextColor3 = Color3.fromRGB(0, 0, 0)
             Label.TextSize = 14.000
+            Label.BackgroundTransparency = 1.000
 
             LabelCorner.CornerRadius = UDim.new(0, 5)
             LabelCorner.Name = "ButtonCorner"
