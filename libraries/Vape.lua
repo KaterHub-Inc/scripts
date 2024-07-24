@@ -1549,7 +1549,7 @@ function lib:Window(text, preset)
             LabelTitle.Parent = Label
             LabelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             LabelTitle.BackgroundTransparency = 1.000
-            LabelTitle.Position = UDim2.new(0.0358126722, 0, 0, 0)
+            LabelTitle.Position = UDim2.new(0.5, 0, 0.5, 0)
             LabelTitle.Size = UDim2.new(0, 187, 0, 42)
             LabelTitle.Font = Enum.Font.Gotham
             LabelTitle.Text = "Ping: nil / FPS: nil"
