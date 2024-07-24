@@ -9,7 +9,7 @@ local CloseBind = Enum.KeyCode.RightControl
 
 local ui = Instance.new("ScreenGui")
 ui.Name = "ui"
-ui.Parent = game.CoreGui
+ui.Parent = game:GetService("CoreGui")
 ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 coroutine.wrap(
