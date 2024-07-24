@@ -140,10 +140,10 @@ function lib:Window(text, preset)
     Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Title.BackgroundTransparency = 1.000
     Title.Position = UDim2.new(0.0339285731, 0, 0.0564263314, 0)
-    Title.Size = UDim2.new(0, 200, 0, 23)
+    Title.Size = UDim2.new(0, 202, 0, 25)
     Title.Font = Enum.Font.GothamSemibold
     Title.Text = text
-    Title.TextColor3 = Color3.fromRGB(68, 68, 68)
+    Title.TextColor3 = Color3.fromRGB(88, 88, 88)
     Title.TextSize = 12.000
     Title.TextXAlignment = Enum.TextXAlignment.Left
 
