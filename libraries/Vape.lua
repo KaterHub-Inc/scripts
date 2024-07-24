@@ -1529,15 +1529,13 @@ function lib:Window(text, preset)
             local LabelCorner = Instance.new("UICorner")
             local LabelTitle = Instance.new("TextLabel")
 
-            Label.Name = "PingFPS Label"
+            Label.Name = "PingFps"
             Label.Parent = Tab
             Label.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
             Label.Size = UDim2.new(0, 363, 0, 42)
-            Label.AnchorPoint = Vector2.new(0.5, 0.5)
             Label.AutoButtonColor = false
             Label.Font = Enum.Font.SourceSans
             Label.Text = ""
-            Label.BackgroundTransparency = 0
             Label.TextColor3 = Color3.fromRGB(0, 0, 0)
             Label.TextSize = 14.000
 
@@ -1545,19 +1543,17 @@ function lib:Window(text, preset)
             LabelCorner.Name = "Corner"
             LabelCorner.Parent = Label
 
-            LabelTitle.Name = "status"
-
+            LabelTitle.Name = "Title"
             LabelTitle.Parent = Label
             LabelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             LabelTitle.BackgroundTransparency = 1.000
-            LabelTitle.Position = UDim2.new(0.5, 0, 0.5, 0)
+            LabelTitle.Position = UDim2.new(0.0358126722, 0, 0, 0)
             LabelTitle.Size = UDim2.new(0, 187, 0, 42)
             LabelTitle.Font = Enum.Font.Gotham
-            LabelTitle.Text = "Ping: nil / FPS: nil"
+            LabelTitle.Text = text
             LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             LabelTitle.TextSize = 14.000
-            LabelTitle.TextXAlignment = Enum.TextXAlignment.Center
-            LabelTitle.TextYAlignment = Enum.TextYAlignment.Center
+            LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 
