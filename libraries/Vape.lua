@@ -1490,7 +1490,6 @@ function lib:Window(text, preset)
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
         end
-
         function tabcontent:Seperator()
             local Label = Instance.new("TextButton")
             local LabelCorner = Instance.new("UICorner")
@@ -1525,7 +1524,6 @@ function lib:Window(text, preset)
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
         end
-
         function tabcontent:PingFps()
             local Label = Instance.new("TextButton")
             local LabelCorner = Instance.new("UICorner")
@@ -1569,7 +1567,6 @@ function lib:Window(text, preset)
                 end
             end))
         end
-
         function tabcontent:Textbox(text, disapper, callback)
             local Textbox = Instance.new("Frame")
             local TextboxCorner = Instance.new("UICorner")
@@ -1707,7 +1704,6 @@ function lib:Window(text, preset)
                 end
             )
         end
-
         function tabcontent:VapeToggle(keypreset)
             local binding = false
             local Key = keypreset.Name
@@ -1784,6 +1780,65 @@ function lib:Window(text, preset)
                     end
                 end
             )
+        end
+        function tabcontent:Destroy(callback)
+            local Button = Instance.new("TextButton")
+            local ButtonCorner = Instance.new("UICorner")
+            local ButtonTitle = Instance.new("TextLabel")
+
+            Button.Name = "Button"
+            Button.Parent = Tab
+            Button.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+            Button.Size = UDim2.new(0, 363, 0, 42)
+            Button.AutoButtonColor = false
+            Button.Font = Enum.Font.SourceSans
+            Button.Text = ""
+            Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+            Button.TextSize = 14.000
+
+            ButtonCorner.CornerRadius = UDim.new(0, 5)
+            ButtonCorner.Name = "ButtonCorner"
+            ButtonCorner.Parent = Button
+
+            ButtonTitle.Name = "ButtonTitle"
+            ButtonTitle.Parent = Button
+            ButtonTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            ButtonTitle.BackgroundTransparency = 1.000
+            ButtonTitle.Position = UDim2.new(0.0358126722, 0, 0, 0)
+            ButtonTitle.Size = UDim2.new(0, 187, 0, 42)
+            ButtonTitle.Font = Enum.Font.Gotham
+            ButtonTitle.Text = "Destroy GUI"
+            ButtonTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            ButtonTitle.TextSize = 14.000
+            ButtonTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+            Button.MouseEnter:Connect(
+                function()
+                    TweenService:Create(
+                        Button,
+                        TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                        {BackgroundColor3 = Color3.fromRGB(37, 37, 37)}
+                    ):Play()
+                end
+            )
+
+            Button.MouseLeave:Connect(
+                function()
+                    TweenService:Create(
+                        Button,
+                        TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+                        {BackgroundColor3 = Color3.fromRGB(34, 34, 34)}
+                    ):Play()
+                end
+            )
+
+            Button.MouseButton1Click:Connect(function()
+                pcall(callback)
+                task.wait()
+                ui:Destroy()
+            end)
+
+            Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
         end
         return tabcontent
     end
