@@ -6,11 +6,11 @@
 
 Project Blackhole
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KaterHub-Inc/scripts/main/game/ProjectBlackhole.lua"))()
+loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/ProjectBlackhole.lua"))()
 ```
-
+Katers NDS Hub
 ```lua
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/KH-NDS.lua"))()
 ```
 
 ```lua
