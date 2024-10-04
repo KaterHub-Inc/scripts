@@ -12,9 +12,9 @@ Katers NDS Hub
 ```lua
 loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/KH-NDS.lua"))()
 ```
-
+Anthony Davis Hub
 ```lua
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/ragdoll.lua"))()
 ```
 
 ```lua
