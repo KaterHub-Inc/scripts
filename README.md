@@ -14,7 +14,7 @@ loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/KH-NDS.lua"
 ```
 Anthony Davis Hub
 ```lua
-loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/ragdoll.lua"))()
+loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/hideandseek.lua"))()
 ```
 
 ```lua
