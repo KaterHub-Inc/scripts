@@ -16,9 +16,9 @@ Anthony Davis Hub
 ```lua
 loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/hideandseek.lua"))()
 ```
-
-```lua
 Universal Cancel Simulator Script
+```lua
+-- note: you have to try using it in Public Bathroom Simulator
 loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/CancelHub.lua"))()
 ```
 
