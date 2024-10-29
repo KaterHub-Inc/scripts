@@ -18,7 +18,8 @@ loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/hideandseek
 ```
 
 ```lua
-loadstring(game:HttpGet(""))()
+Universal Cancel Simulator Script
+loadstring(game:HttpGet("https://katerhub-inc.github.io/scripts/game/CancelHub.lua"))()
 ```
 
 
