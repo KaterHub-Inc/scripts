@@ -1,7 +1,7 @@
 local funcs = {}
 local VC = game:GetService("VoiceChatService")
 
-function funcs.Connect()
+function funcs:Connect()
   VC:joinVoice()
 end
 
