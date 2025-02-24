@@ -1,8 +1,7 @@
-local funcs = {}
-local VC = game:GetService("VoiceChatService")
+local funcs = {VC = game:GetService("VoiceChatService");}
 
 function funcs:Connect()
-  VC:joinVoice()
+  funcs.VC:joinVoice()
 end
 
 return
