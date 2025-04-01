@@ -1,9 +1,7 @@
-local settings = ({...})[1] or nil
+local settings = (...) or nil
 
 if settings then
-    for q,v in pairs(settings) do
-        print(q,v)
-    end
+    print(settings)
 else
     print("is nil")
 end
