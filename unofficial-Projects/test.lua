@@ -1,5 +1,9 @@
-local var = {...} or {"hi";"no"}
+local settings = ({...})[1] or nil
 
-for q,v in pairs(var) do
-  print(q,v)
+if settings then
+    for q,v in pairs(settings) do
+        print(q,v)
+    end
+else
+    print("is nil")
 end
